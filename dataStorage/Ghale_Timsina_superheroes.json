@@ -1,0 +1,58 @@
+[
+    {
+        "id": 5,
+        "name": "SuperGenius",
+        "strength": "****",
+        "costume": "data-outfit",
+        "yearOfBirth": 2012
+    },
+    {
+        "id": 7,
+        "name": "SteelFoot",
+        "strength": "*",
+        "costume": "brown",
+        "yearOfBirth": 1960
+    },
+    {
+        "id": 2,
+        "name": "SuperQL",
+        "strength": "**",
+        "costume": "green",
+        "yearOfBirth": 1905
+    },
+    {
+        "id": 1,
+        "name": "Lightning",
+        "strength": "***",
+        "costume": "orange",
+        "yearOfBirth": 2000
+    },
+    {
+        "id": 4,
+        "name": "DataMaster",
+        "strength": "*****",
+        "costume": "red",
+        "yearOfBirth": 2017
+    },
+    {
+        "id": 6,
+        "name": "SuperMoron",
+        "strength": "*",
+        "costume": "blue",
+        "yearOfBirth": 1990
+    },
+    {
+        "id": 3,
+        "name": "Rustman",
+        "strength": "**",
+        "costume": "memoryhelmet",
+        "yearOfBirth": 1890
+    },
+    {
+        "id": 9,
+        "name": "spiderMonk",
+        "strength": "",
+        "costume": "red",
+        "yearOfBirth": 0
+    }
+]

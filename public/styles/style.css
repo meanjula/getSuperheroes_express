@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+  border-radius: 5px;
+}
+body {
+  background: linear-gradient(
+    to right,
+    rgba(68, 117, 182, 0.602),
+    skyblue,
+    rgba(212, 181, 187, 0.493)
+  );
+  font-size: 1.2rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+}
+main,
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem;
+}
+h1 {
+  padding: 0.5rem;
+}
+a {
+  color: rgb(5, 49, 121);
+}
+.form-field {
+  display: flex;
+  width: 60vw;
+  line-height: 3rem;
+  margin: 0.5rem;
+}
+label {
+  flex-basis: 20%;
+}
+input {
+  flex-basis: 70%;
+  text-transform: capitalize;
+  padding: 1rem;
+  font-size: 1.2rem;
+  width: 15em;
+}
+input[readonly] {
+  background-color: rgb(185, 169, 169);
+}
+
+table {
+  border-collapse: collapse;
+  margin-bottom: 1em;
+}
+
+table,
+th,
+td {
+  border: solid black 1px;
+  padding: 0.5em;
+}
+
+thead {
+  background-color: khaki;
+}
+
+button {
+  font-family: sans-serif;
+  width: 20em;
+  height: 2em;
+  font-size: 1.2rem;
+  background-color: rgba(105, 51, 94, 0.883);
+  color: aliceblue;
+  margin-top: 0.5rem;
+}
+p {
+  line-height: 3rem;
+}
+p.info {
+  border: dashed rgb(0, 102, 128) 2px;
+  padding: 1em;
+  color: blue;
+}
+
+p.error {
+  border: dashed rgba(105, 51, 94, 0.883) 2px;
+  padding: 1em;
+}
+
+h1.error {
+  color: red;
+}
+.menu a {
+  text-decoration: none;
+  border: 1px solid white;
+  height: 3rem;
+  width: 40vw;
+  text-align: center;
+  box-shadow: -3px -3px 7px #ffffff73, inset 3px 3px 5px rgba(94, 104, 121, 288);
+  margin: 1rem;
+  padding: 0.5rem;
+  font-size: 1.4rem;
+}
+footer {
+  margin: 2rem 0;
+}
+@media (max-width: 550px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  .menu a {
+    width: 90vw;
+  }
+  main,
+  form {
+    justify-content: left;
+    margin: 2rem;
+  }
+  table,
+  th,
+  td {
+    font-size: 0.8rem;
+    padding: 5px;
+  }
+  .form-field {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    margin: 0 1rem;
+    padding-left: 2.5rem;
+  }
+  button {
+    width: 15em;
+    margin-left: 10px;
+  }
+  input {
+    flex-basis: 100%;
+    padding: 1rem;
+    font-size: 1.2rem;
+    width: 15em;
+  }
+}
+@media (max-width: 320px) {
+  form {
+    margin: 1rem;
+  }
+  input {
+    flex-basis: 100%;
+    padding: 5px;
+    font-size: 1rem;
+    width: 100%;
+  }
+  button {
+    width: 10em;
+    margin-left: 5px;
+  }
+  table,
+  th,
+  td {
+    font-size: 0.6rem;
+    padding: 3px;
+  }
+}

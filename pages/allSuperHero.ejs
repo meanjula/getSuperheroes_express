@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>All superheroes</title>
+	<link rel="stylesheet" href="/styles/style.css">
+
+</head>
+<body>
+	<h1>All SuperHeroes</h1>
+	<div class="table-wrap">
+	<table>
+		<thead>
+			<tr>
+				<th>SuperHero Id</th>
+				<th>Name</th>
+				<th>Strength</th>
+				<th>Costume</th>
+				<th>Year Of Birth</th>	
+			</tr>
+		</thead>
+		<tbody>
+			<% result.forEach(superhero => { %> 
+				<tr>
+					<td><%= superhero.id %></td>
+					<td><%= superhero.name%> </td>
+					<td><%= superhero.strength %></td>
+					<td><%= superhero.costume %></td>
+					<td><%= superhero.yearOfBirth %></td>
+				</tr>
+			<% }) %>
+		</tbody>
+	</table>
+    </div>
+	<a href="/"><button>Menu</button></a>
+	<footer>
+		<p>&copy; 2021 Anjula Timsina </p>
+	</footer>
+	
+</body>
+</html>

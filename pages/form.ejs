@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title><%= title %></title>
+	<link rel="stylesheet" href="/styles/style.css">
+</head>
+<body>
+	<main>
+		<h1><%= header %></h1>
+		<form action="<%= action %>" method="POST">
+			<div class="form-field">
+				<label for="id">SuperHero Id </label>
+				<input type="number" id="id" name="id" size="5" value="<%= id.value %>" placeholder="Id number" <%= id.readonly %> required>
+			</div>
+			<div class="form-field">
+				<label for="name">Name </label>
+				<input type="text" id="name" name="name" size="5" value="<%= name.value %>" placeholder="superhero's name" <%= name.readonly %>  required>
+			</div>
+			
+			<div class="form-field">
+				<label for="strength">Strength </label>
+				<input type="text" id="strength" name="strength" size="30" value="<%= strength.value %>" placeholder="eg: ****" <%= strength.readonly %> >
+			</div>
+			<div class="form-field">
+				<label for="costume">Costume </label>
+				<input type="text" id="costume" name="costume" size="15" value="<%= costume.value %>" placeholder="costume color" <%= costume.readonly %>>
+			</div>
+			<div class="form-field">
+				<label for="yearOfBirth">YearOfBirth </label>
+				<input type="number" id="yearOfBirth" name="yearOfBirth" size="10" value="<%= yearOfBirth.value %>" placeholder="date in Year" <%= yearOfBirth.readonly %>>
+			</div>
+			<button type="submit">Submit</button>
+		</form>
+		<a href="/"><button>Menu</button></a>
+	</main>
+	<footer>
+		<a>&copy; 2021 Anjula Timsina </a>
+	</footer>
+	
+</body>
+</html>
