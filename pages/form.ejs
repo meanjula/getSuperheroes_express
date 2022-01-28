@@ -13,7 +13,7 @@
 		<form action="<%= action %>" method="POST">
 			<div class="form-field">
 				<label for="id">SuperHero Id </label>
-				<input type="number" id="id" name="id" size="5" value="<%= id.value %>" placeholder="Id number" <%= id.readonly %> required>
+				<input type="number" id="id" min="1" name="id" size="5" value="<%= id.value %>" placeholder="Id number" <%= id.readonly %> required>
 			</div>
 			<div class="form-field">
 				<label for="name">Name </label>

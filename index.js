@@ -104,7 +104,8 @@ app.get("/updateform", (req, res) =>
   })
 );
 
-//adding updated value to specific id(superhero)
+//adding id: { value: superhero.id, readonly: "readonly" },
+
 app.post("/updatedata", (req, res) => {
   if (!req.body) res.sendStatus(500);
   dataStorage
@@ -115,10 +116,10 @@ app.post("/updatedata", (req, res) => {
         header: "Update Superhero data",
         action: "/update",
         id: { value: superhero.id, readonly: "readonly" },
-        name: { value: "", readonly: "" },
-        strength: { value: "", readonly: "" },
-        costume: { value: "", readonly: "" },
-        yearOfBirth: { value: "", readonly: "" },
+        name: { value: superhero.name, readonly: "" },
+        strength: { value: superhero.strength, readonly: "" },
+        costume: { value: superhero.costume, readonly: "" },
+        yearOfBirth: { value: superhero.yearOfBirth, readonly: "" },
       })
     )
     .catch((error) => sendErrorPage(res, error));
